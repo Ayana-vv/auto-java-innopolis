@@ -1,4 +1,4 @@
-package homeworks.Number2_L3.p2.rooms;
+package homeworks.Number2_L3.p2;
 
 public class Room {
     String name;

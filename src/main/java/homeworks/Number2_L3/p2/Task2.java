@@ -1,7 +1,5 @@
 package homeworks.Number2_L3.p2;
 
-import homeworks.Number2_L3.p2.rooms.Room;
-
 public class Task2 {
     public static void main(String[] args) {
         Flat flat1 = new Flat(2, 11, true, new Room("кухня", "серая", "3x4"));

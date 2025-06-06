@@ -1,7 +1,5 @@
 package homeworks.Number2_L3.p2;
 
-import homeworks.Number2_L3.p2.rooms.Room;
-
 public class Flat {
     Room room;
     int countRooms;
