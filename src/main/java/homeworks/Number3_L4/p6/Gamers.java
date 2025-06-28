@@ -1,4 +1,4 @@
-package homeworks.Number3_L3.p6;
+package homeworks.Number3_L4.p6;
 
 public class Gamers {
     public static void main(String[] args) {

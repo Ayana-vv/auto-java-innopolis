@@ -1,4 +1,4 @@
-package homeworks.Number3_L3.p3_p5;
+package homeworks.Number3_L4.p3_p5;
 
 public class Movie {
     String name;

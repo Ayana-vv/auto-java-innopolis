@@ -1,4 +1,4 @@
-package homeworks.Number3_L3.p1_p2;
+package homeworks.Number3_L4.p1_p2;
 
 public class p1_p2 {
     public static void main(String[] args) {

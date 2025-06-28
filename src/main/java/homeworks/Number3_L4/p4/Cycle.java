@@ -1,4 +1,4 @@
-package homeworks.Number3_L3.p4;
+package homeworks.Number3_L4.p4;
 
 public class Cycle {
     public static void main(String[] args) {
