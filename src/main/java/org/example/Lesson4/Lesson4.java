@@ -10,6 +10,7 @@ public class Lesson4 {
         String human3 = "89990002233";
         String human4 = "89995551122";
 
+        //3 способа:
         String[] humans = new String[4];
         humans[0] = "89995551122";
         humans[1] = "89554447788";
@@ -17,6 +18,7 @@ public class Lesson4 {
         humans[3] = "89995551122";
 
         String[] humans2 = new String[]{"89995551122","89554447788","89990002233","89995551122"};
+
         String[] humans3 = {"89995551122","89554447788","89990002233","89995551122"};
 
         System.out.println(humans2[2]);
@@ -26,6 +28,7 @@ public class Lesson4 {
         float[] someFloatNumbers = new float[10];
         someFloatNumbers[5] = 52.24f;
         System.out.println(someFloatNumbers[5]);
+        System.out.println(someLongNumbers[0]);
 
         boolean[] isSomeBoolean = {true, false, false, true};
 
@@ -33,13 +36,9 @@ public class Lesson4 {
         playList[0] = new Track(3, "Jake", "XO");
         playList[1] = new Track(4, "Agust D", "D-Day");
         System.out.println(playList[0].author);
-        System.out.println(playList[1].author);
+        System.out.println(playList[1].duration);
 
-        Track[] playList2 = {
-                new Track(3, "Jake", "XO"),
-                new Track(4, "Agust D", "D-Day")
-        };
-        System.out.println(playList2[1].title);
+
 
 
 //        int[] numbers = new int[100];

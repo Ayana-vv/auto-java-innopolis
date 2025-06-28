@@ -6,4 +6,12 @@ public class Movie {
     String genre;
     String country;
     boolean isOscar;
+
+    public Movie(String name, int rank, String genre, String country, boolean isOscar) {
+        this.name = name;
+        this.rank = rank;
+        this.genre = genre;
+        this.country = country;
+        this.isOscar = isOscar;
+    }
 }
