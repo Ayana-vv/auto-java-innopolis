@@ -9,7 +9,7 @@ public class MicrosoftL6 {
 //        mark.setName("");
 //        System.out.println("Имя: " + mark.getName());
 //        System.out.println(markSalary);
-        Notifier notifier = new SmsNotifier();
+        Notifier notifier = new EmailNotifier();
         notifier.send("Поздравляю, вас", mark);
         notifier.send("Ваша зп равна: " + mark.getSalary(), mark);
 
