@@ -3,7 +3,7 @@ package org.example.Lesson6;
 public class MicrosoftL6 {
     public static void main(String[] args) {
         EmployerL6 mark = new EmployerL6("Mark", "Jonson", 35, "mark@ya.ru", 15000);
-//        mark.setSalary(1.5);
+        mark.setSalary(1.5);
 
 //        double markSalary = mark.getSalary();
 //        mark.setName("");

@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class AboutPlayers {
     public static void main(String[] args) {
+        //Список игроков
         Map<String, Integer> rates = new HashMap<>();
         Player player1 = new Player(1, "GOAT", true);
         Player player2 = new Player(1, "GOAT", true);

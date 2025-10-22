@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ToDoList {
     public static void main(String[] args) {
+        //Список дел
         List<String> toDoList = new ArrayList<>();      //список дел
         toDoList.add("Проснуться");
         toDoList.add("Позавтракать");

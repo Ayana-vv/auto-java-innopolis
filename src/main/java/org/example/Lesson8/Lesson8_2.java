@@ -53,6 +53,7 @@ public class Lesson8_2 {
         LocalDateTime dateTimeParsed = LocalDateTime.of(dateParsed, timeParsed);
         System.out.println(dateTimeParsed);
 
+        //Formatter
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy");
         String dateString = formatter.format(dateTimeParsed);
         System.out.println(dateString);

@@ -27,6 +27,7 @@ public class ArrayCompanies {
         company3.add("Avatar");
         company3.add("Ice Age 5");
 
+        //Вывод информации о всех компаниях с их фильмами
         for (Company company : companies)
         {
             System.out.println("Компания " + company.getName() + ": " + company.getFilms());
