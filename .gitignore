@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+test.txt
+bannedUser.json
+player.json
+project.eml
+users.xml
