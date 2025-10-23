@@ -8,35 +8,25 @@ public class Game {
         int userScore = 0;
         int pcScore = 0;
 
-//        if (userValue.toUpperCase().equals(pcValue.toUpperCase())) {
-//                System.out.println("Результат раунда - Ничья!");
-//        } else if ((userValue.toUpperCase().equals("К") && pcValue.toUpperCase().equals("Н")) ||
-//                    (userValue.toUpperCase().equals("Н") && pcValue.toUpperCase().equals("Б")) ||
-//                    (userValue.toUpperCase().equals("Б") && pcValue.toUpperCase().equals("К")) )
-//                {
-//                    this.userScore = points(userValue);
-//                    System.out.println("Результат раунда - Вы выиграли!");
-//        } else {
-//            pcScore = points(pcValue);
-//            System.out.println("Результат раунда - Компьютер выиграл!");
-//        }
-        if (userValue.equalsIgnoreCase(pcValue)) {
+        //ход игры
+        if (userValue.equalsIgnoreCase(pcValue)) {                                                                  //если ходы одинаковы, то ничья
             System.out.println("Результат раунда - Ничья!");
         } else {
-            if ((userValue.equalsIgnoreCase("К") && pcValue.equalsIgnoreCase("Н")) ||
-                    (userValue.equalsIgnoreCase("Н") && pcValue.equalsIgnoreCase("Б")) ||
-                    (userValue.equalsIgnoreCase("Б") && pcValue.equalsIgnoreCase("К"))) {
+            if ((userValue.equalsIgnoreCase("К") && pcValue.equalsIgnoreCase("Н")) ||       //ходы, когда
+                    (userValue.equalsIgnoreCase("Н") && pcValue.equalsIgnoreCase("Б")) ||   //пользователь
+                    (userValue.equalsIgnoreCase("Б") && pcValue.equalsIgnoreCase("К"))) {   //выигрывает
                 System.out.println("Результат раунда - Вы выиграли!");
-                this.userScore = points(userValue);
+                this.userScore += points(userValue);                                                                //подсчет очков
             } else {
-                this.pcScore = points(pcValue);
-                System.out.println("Результат раунда - Компьютер выиграл!");
+                this.pcScore += points(pcValue);
+                System.out.println("Результат раунда - Компьютер выиграл!");                                        //ходы, когда пк выигрывает
             }
         }
     }
 
+    //очки
     public int points(String choice) {
-        return switch (choice) {
+        return switch (choice.toUpperCase()) {
             case "К" -> 1; // Камень - 1 балл
             case "Н" -> 2; // Ножницы - 2 балла
             case "Б" -> 5; // Бумага - 5 баллов

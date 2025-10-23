@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class RockScissorsPaper {
 
     public static void main(String[] args) {
-//        int userScore = 0;
-//        int pcScore = 0;
         Game game = new Game();
 
         //объявление цикла, т.к. игра состоит из 5 раундов
@@ -18,7 +16,7 @@ public class RockScissorsPaper {
             String userValue = scanner.nextLine();
 
             if (!userValue.toUpperCase().equals("К") && !userValue.toUpperCase().equals("Н") &&
-                    !userValue.toUpperCase().equals("Б")) {                                           //проверка на строчные буквы
+                    !userValue.toUpperCase().equals("Б")) {                                           //проверка на вводимые значения
                 System.out.println("Некорректное значение! \nПопробуйте заново.\n");                  //если некорректно, то вывод сообщения
                 i--;                                                                                  //счётчик раунда остаётся прежний
                 continue;
@@ -31,13 +29,9 @@ public class RockScissorsPaper {
 
             //ход игры
             game.moveGame(userValue, pcValue);
-
         }
 
-//        game.getUserScore();
-//        game.getPcScore();
-
-        //Вывод всех итогов:
+        //вывод всех итогов:
         System.out.println("Итоговый счёт: у вас - " + game.getUserScore() + " б., у компьютера - " + game.getPcScore() + " б.");
         if (game.getUserScore() == game.getPcScore()) {
             System.out.println("Ничья!");
